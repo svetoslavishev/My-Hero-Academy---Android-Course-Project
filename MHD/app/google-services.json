@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "463087116185",
+    "firebase_url": "https://my-hero-academy.firebaseio.com",
+    "project_id": "my-hero-academy",
+    "storage_bucket": "my-hero-academy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463087116185:android:26a938910a24fc8c",
+        "android_client_info": {
+          "package_name": "slav40.myheroacademy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463087116185-14ocl6spat9ivoajc08spkv2l69t609d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "slav40.myheroacademy",
+            "certificate_hash": "0def790c4a6984f6d8c7ca2d22d025587731e8a4"
+          }
+        },
+        {
+          "client_id": "463087116185-hk2ksbnl9293hfcg44is1nhll627h721.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyWrYmGqyRLz0Fm2_9M73XTcR1eORs8zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463087116185-hk2ksbnl9293hfcg44is1nhll627h721.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
