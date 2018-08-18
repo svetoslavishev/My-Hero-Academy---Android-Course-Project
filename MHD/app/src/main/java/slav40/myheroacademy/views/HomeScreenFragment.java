@@ -12,18 +12,19 @@ import android.widget.ImageButton;
 import slav40.myheroacademy.R;
 
 
-public class MainScreenFragment extends Fragment
+public class HomeScreenFragment extends Fragment
 {
     private ImageButton mHeroButton;
+    private ImageButton mVillainButton;
 
-    public MainScreenFragment()
+    public HomeScreenFragment()
     {
         // Required empty public constructor
     }
 
-    public static MainScreenFragment createInstance()
+    public static HomeScreenFragment createInstance()
     {
-        return new MainScreenFragment();
+        return new HomeScreenFragment();
     }
 
     @Override
@@ -31,12 +32,19 @@ public class MainScreenFragment extends Fragment
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_main_screen, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_screen, container, false);
 
         mHeroButton = view.findViewById(R.id.hero_btn);
         mHeroButton.setOnClickListener(v ->
         {
             Intent intent = new Intent(getContext(), HeroesListActivity.class);
+            startActivity(intent);
+        });
+
+        mVillainButton = view.findViewById(R.id.villain_btn);
+        mVillainButton.setOnClickListener(v ->
+        {
+            Intent intent = new Intent(getContext(), VillainsListActivity.class);
             startActivity(intent);
         });
 

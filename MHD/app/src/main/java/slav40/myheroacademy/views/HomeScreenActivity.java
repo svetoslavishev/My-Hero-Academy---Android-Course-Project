@@ -5,21 +5,21 @@ import android.os.Bundle;
 
 import slav40.myheroacademy.R;
 
-public class MainScreenActivity extends AppCompatActivity
+public class HomeScreenActivity extends AppCompatActivity
 {
-    private MainScreenFragment mMainScreenFragment;
+    private HomeScreenFragment mHomeScreenFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
+        setContentView(R.layout.activity_home_screen);
 
-        mMainScreenFragment = MainScreenFragment.createInstance();
+        mHomeScreenFragment = HomeScreenFragment.createInstance();
 
         getFragmentManager()
                 .beginTransaction()
-                .replace(R.id.content, mMainScreenFragment)
+                .replace(R.id.home, mHomeScreenFragment)
                 .commit();
     }
 }

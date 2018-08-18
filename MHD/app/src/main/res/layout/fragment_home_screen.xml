@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.HomeScreenFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/hero_btn"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hero_button" />
+
+        <ImageButton
+            android:id="@+id/villain_btn"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:padding="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/villain_button" />
+
+    </RelativeLayout>
+
+</FrameLayout>

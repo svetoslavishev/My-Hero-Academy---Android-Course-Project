@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.MainScreenActivity">
+        <activity android:name=".views.HomeScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.HeroesListActivity"></activity>
+        <activity android:name=".views.HeroesListActivity" />
+        <activity android:name=".views.VillainsListActivity" />
+        <activity android:name=".views.CharacterDetailsActivity"></activity>
     </application>
 
 </manifest>

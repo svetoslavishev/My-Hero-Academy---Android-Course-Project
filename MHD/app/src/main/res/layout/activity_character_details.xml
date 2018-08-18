@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.HeroesListActivity">
+    tools:context=".views.CharacterDetailsActivity">
 
     <FrameLayout
-        android:id="@+id/heroes_list"
+        android:id="@+id/details"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
