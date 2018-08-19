@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".views.HeroesListActivity">
 
-    <FrameLayout
-        android:id="@+id/heroes_list"
+    <ListView
+        android:id="@+id/lv_heroes"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
