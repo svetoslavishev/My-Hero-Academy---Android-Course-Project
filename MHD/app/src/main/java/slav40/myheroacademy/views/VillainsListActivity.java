@@ -20,7 +20,7 @@ import slav40.myheroacademy.models.Character;
 public class VillainsListActivity extends AppCompatActivity
 {
     private ListView mVillainsListView;
-    private List<Character> villains;
+    private List<Character> mVillains;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -60,8 +60,8 @@ public class VillainsListActivity extends AppCompatActivity
                 R.drawable.dabi,
                 R.drawable.dabi_full);
 
-        villains = new ArrayList<>();
-        villains.addAll(Arrays.asList(allForOne, shigaraki, stain, himiko, dabi));
+        mVillains = new ArrayList<>();
+        mVillains.addAll(Arrays.asList(allForOne, shigaraki, stain, himiko, dabi));
 
         mVillainsListView = findViewById(R.id.lv_villains);
 
@@ -71,9 +71,9 @@ public class VillainsListActivity extends AppCompatActivity
         mVillainsListView.setOnItemClickListener((adapterView, view, i, l) ->
         {
             Intent intent = new Intent(getApplicationContext(), CharacterDetailsActivity.class);
-            intent.putExtra("name", villains.get(i).getRealName());
-            intent.putExtra("description", villains.get(i).getDescription());
-            intent.putExtra("image", villains.get(i).getDetailedImgURL());
+            intent.putExtra("name", mVillains.get(i).getRealName());
+            intent.putExtra("description", mVillains.get(i).getDescription());
+            intent.putExtra("image", mVillains.get(i).getDetailedImgURL());
             startActivity(intent);
         });
     }
@@ -83,7 +83,7 @@ public class VillainsListActivity extends AppCompatActivity
         @Override
         public int getCount()
         {
-            return villains.size();
+            return mVillains.size();
         }
 
         @Override
@@ -106,8 +106,8 @@ public class VillainsListActivity extends AppCompatActivity
             TextView name = view1.findViewById(R.id.heroes);
             ImageView image = view1.findViewById(R.id.images);
 
-            name.setText(villains.get(i).getName());
-            image.setImageResource(villains.get(i).getImgURL());
+            name.setText(mVillains.get(i).getName());
+            image.setImageResource(mVillains.get(i).getImgURL());
 
             return view1;
         }

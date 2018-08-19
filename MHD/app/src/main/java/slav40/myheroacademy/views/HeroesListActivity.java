@@ -21,7 +21,7 @@ import slav40.myheroacademy.R;
 public class HeroesListActivity extends AppCompatActivity
 {
     private ListView mHeroesListView;
-    private List<Character> heroes;
+    private List<Character> mHeroes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -65,8 +65,8 @@ public class HeroesListActivity extends AppCompatActivity
                 R.drawable.mt_lady,
                 R.drawable.mt_lady_full);
 
-        heroes = new ArrayList<>();
-        heroes.addAll(Arrays.asList(allMight, deku, kacchan, shoto, midnight, mtLady));
+        mHeroes = new ArrayList<>();
+        mHeroes.addAll(Arrays.asList(allMight, deku, kacchan, shoto, midnight, mtLady));
 
         mHeroesListView = findViewById(R.id.lv_heroes);
 
@@ -76,9 +76,9 @@ public class HeroesListActivity extends AppCompatActivity
         mHeroesListView.setOnItemClickListener((adapterView, view, i, l) ->
         {
             Intent intent = new Intent(getApplicationContext(), CharacterDetailsActivity.class);
-            intent.putExtra("name", heroes.get(i).getRealName());
-            intent.putExtra("description", heroes.get(i).getDescription());
-            intent.putExtra("image", heroes.get(i).getDetailedImgURL());
+            intent.putExtra("name", mHeroes.get(i).getRealName());
+            intent.putExtra("description", mHeroes.get(i).getDescription());
+            intent.putExtra("image", mHeroes.get(i).getDetailedImgURL());
             startActivity(intent);
         });
     }
@@ -88,7 +88,7 @@ public class HeroesListActivity extends AppCompatActivity
         @Override
         public int getCount()
         {
-            return heroes.size();
+            return mHeroes.size();
         }
 
         @Override
@@ -111,8 +111,8 @@ public class HeroesListActivity extends AppCompatActivity
             TextView name = view1.findViewById(R.id.heroes);
             ImageView image = view1.findViewById(R.id.images);
 
-            name.setText(heroes.get(i).getName());
-            image.setImageResource(heroes.get(i).getImgURL());
+            name.setText(mHeroes.get(i).getName());
+            image.setImageResource(mHeroes.get(i).getImgURL());
 
             return view1;
         }
