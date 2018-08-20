@@ -60,8 +60,15 @@ public class VillainsListActivity extends AppCompatActivity
                 R.drawable.dabi,
                 R.drawable.dabi_full);
 
+        Character mrCompress = new Character(" Mr. Compress",
+                "Atsuhiro Sako",
+                "Atsuhiro Sako (Mr. Compress) is one of the smartest villains and acts as the brains of the League of Villains. Quirk: Compress. His Quirk allows him to \"compress\" anything in a spherical area into a small marble without actually damaging it.",
+                R.drawable.mr_compress,
+                R.drawable.mr_compress_full);
+
+
         mVillains = new ArrayList<>();
-        mVillains.addAll(Arrays.asList(allForOne, shigaraki, stain, himiko, dabi));
+        mVillains.addAll(Arrays.asList(allForOne, shigaraki, stain, himiko, dabi, mrCompress));
 
         mVillainsListView = findViewById(R.id.lv_villains);
 
